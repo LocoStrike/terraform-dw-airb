@@ -1,0 +1,65 @@
+{
+	"name": "ds_dim_hechos_airb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_dw_airb",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "listing_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "day",
+				"type": "varchar"
+			},
+			{
+				"name": "city",
+				"type": "varchar"
+			},
+			{
+				"name": "room_type",
+				"type": "varchar"
+			},
+			{
+				"name": "price",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "person_capacity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "cleanliness_rating",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "guest_satisfaction",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "bedrooms",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "hechos_airb"
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "ds_dim_location",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_dw_airb",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "city",
+				"type": "varchar"
+			},
+			{
+				"name": "city_center_km",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_location"
+		}
+	}
+}
